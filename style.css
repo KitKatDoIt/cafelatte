@@ -1,0 +1,95 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.9em;
+}
+
+html {
+  scroll-behavior: smooth; /* Робить прокручування екрана плавнішим */
+}
+
+
+nav ul {
+    border-radius: 10px;
+    padding: 10px 25px;
+    display: flex;
+    justify-content: flex-end;
+    background-color:rgb(103, 89, 89);
+    gap: 10px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+}
+
+.button-container {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.glowing-btn {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    
+    /* Підключення постійної анімації пульсації */
+    animation: pulseGlow 2s infinite alternate;
+    transition: all 0.2s ease-in-out;
+}
+
+  /* Ефект при наведенні мишки */
+.glowing-btn:hover {
+    transform: scale(1.05);
+    animation: none; /* Зупиняємо пульсацію при наведенні для максимального ефекту */
+    box-shadow: 0 0 20px #ffffff, 0 0 40px #ffffff, 0 0 60px #ffffff;
+}
+
+  /* Анімація постійного білого світіння */
+@keyframes pulseGlow {
+    0% {
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3);
+    }
+    100% {
+      box-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 40px rgba(255, 255, 255, 0.6);
+    }
+}
+
+#topOfSite {
+    color: white;
+    text-align: center;
+    margin: 0px;
+    padding: 200px;
+    background-image: url(coffeeliquid.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+a:hover {
+    color: rgb(126, 106, 106);
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: rgb(203, 203, 203);
+}
+
+footer {
+    background-color: rgb(103, 89, 89);
+    padding: 5px;
+    border-radius: 10px;
+    margin: 20px 5px;
+    text-align: center;
+    margin-top: 40px;
+    color: #dccfcf;
+}
