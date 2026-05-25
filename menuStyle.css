@@ -70,7 +70,7 @@ footer {
     color: #dccfcf;
 }
 
-.item:hover {
+.category:hover {
   /* Слегка увеличиваем элемент (на 3%) и приподнимаем вверх на 5 пикселей */
   transform: translateY(-5px) scale(1.03);
   
