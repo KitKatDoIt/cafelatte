@@ -93,3 +93,10 @@ footer {
     margin-top: 40px;
     color: #dccfcf;
 }
+/* Стили для ПК (по умолчанию) */
+body { font-size: 18px; }
+
+/* Стили для смартфонов (экраны меньше 768px) */
+@media (max-width: 768px) {
+    body { font-size: 16px; }
+}
